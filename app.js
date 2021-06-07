@@ -26,6 +26,13 @@ async function loadBreed(breed) {
     const response = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
     const data = await response.json();
 
-    console.log(data);
+    showImages(data.message);
   }
+}
+
+function showImages(images){
+  document.querySelector("#slide").innerHTML=`
+  <div class="slide" style="background-image: url('${images[0]}');">
+  <div class="slide" style="background-image: url('${images[0]}');">
+  `
 }
