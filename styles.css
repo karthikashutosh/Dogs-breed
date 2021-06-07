@@ -9,10 +9,28 @@ body{
     flex-direction: column;
 }
 .slideshow{
-flex: 1;
-background-color: #333;
+flex: 50rem;
+background-color:#333;
+position: relative;
 }
 .header{
     text-align: center;
     padding: 20px 0;
+}
+.header h1{
+    margin:0 0 20px 0;
+    
+}
+.header select{
+    font-size: 1rem;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
